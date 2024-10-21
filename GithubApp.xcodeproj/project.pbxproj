@@ -16,6 +16,11 @@
 		BD9DB62D2CC5133100E993DF /* GithubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DB62C2CC5133100E993DF /* GithubAppTests.swift */; };
 		BD9DB6372CC5133100E993DF /* GithubAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DB6362CC5133100E993DF /* GithubAppUITests.swift */; };
 		BD9DB6392CC5133100E993DF /* GithubAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DB6382CC5133100E993DF /* GithubAppUITestsLaunchTests.swift */; };
+		BD9DB64E2CC526A400E993DF /* ListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9DB64D2CC526A400E993DF /* ListView.storyboard */; };
+		BD9DB6502CC526B600E993DF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DB64F2CC526B600E993DF /* ListViewController.swift */; };
+		BD9DB6532CC5CDFC00E993DF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DB6512CC5CDFC00E993DF /* ListTableViewCell.swift */; };
+		BD9DB6542CC5CDFC00E993DF /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9DB6522CC5CDFC00E993DF /* ListTableViewCell.xib */; };
+		BD9DB6562CC65E0300E993DF /* GithubAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DB6552CC65E0300E993DF /* GithubAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		BD9DB6322CC5133100E993DF /* GithubAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9DB6362CC5133100E993DF /* GithubAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAppUITests.swift; sourceTree = "<group>"; };
 		BD9DB6382CC5133100E993DF /* GithubAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD9DB64D2CC526A400E993DF /* ListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListView.storyboard; sourceTree = "<group>"; };
+		BD9DB64F2CC526B600E993DF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		BD9DB6512CC5CDFC00E993DF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		BD9DB6522CC5CDFC00E993DF /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		BD9DB6552CC65E0300E993DF /* GithubAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,11 @@
 		BD9DB6142CC5132C00E993DF /* GithubApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD9DB6452CC51CAF00E993DF /* View */,
+				BD9DB6472CC51CCB00E993DF /* ViewModel */,
+				BD9DB6462CC51CC200E993DF /* Model */,
 				BD9DB6152CC5132C00E993DF /* AppDelegate.swift */,
 				BD9DB6172CC5132C00E993DF /* SceneDelegate.swift */,
-				BD9DB6192CC5132C00E993DF /* ViewController.swift */,
-				BD9DB61B2CC5132C00E993DF /* Main.storyboard */,
 				BD9DB61E2CC5133100E993DF /* Assets.xcassets */,
 				BD9DB6202CC5133100E993DF /* LaunchScreen.storyboard */,
 				BD9DB6232CC5133100E993DF /* Info.plist */,
@@ -125,6 +136,50 @@
 				BD9DB6382CC5133100E993DF /* GithubAppUITestsLaunchTests.swift */,
 			);
 			path = GithubAppUITests;
+			sourceTree = "<group>";
+		};
+		BD9DB6452CC51CAF00E993DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DB6482CC51CEA00E993DF /* MainScreen */,
+				BD9DB64A2CC5262A00E993DF /* ListScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD9DB6462CC51CC200E993DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DB6552CC65E0300E993DF /* GithubAPIClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD9DB6472CC51CCB00E993DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD9DB6482CC51CEA00E993DF /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DB6192CC5132C00E993DF /* ViewController.swift */,
+				BD9DB61B2CC5132C00E993DF /* Main.storyboard */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		BD9DB64A2CC5262A00E993DF /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DB64F2CC526B600E993DF /* ListViewController.swift */,
+				BD9DB64D2CC526A400E993DF /* ListView.storyboard */,
+				BD9DB6512CC5CDFC00E993DF /* ListTableViewCell.swift */,
+				BD9DB6522CC5CDFC00E993DF /* ListTableViewCell.xib */,
+			);
+			path = ListScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9DB6222CC5133100E993DF /* LaunchScreen.storyboard in Resources */,
+				BD9DB64E2CC526A400E993DF /* ListView.storyboard in Resources */,
 				BD9DB61F2CC5133100E993DF /* Assets.xcassets in Resources */,
 				BD9DB61D2CC5132C00E993DF /* Main.storyboard in Resources */,
+				BD9DB6542CC5CDFC00E993DF /* ListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +317,10 @@
 			files = (
 				BD9DB61A2CC5132C00E993DF /* ViewController.swift in Sources */,
 				BD9DB6162CC5132C00E993DF /* AppDelegate.swift in Sources */,
+				BD9DB6562CC65E0300E993DF /* GithubAPIClient.swift in Sources */,
+				BD9DB6502CC526B600E993DF /* ListViewController.swift in Sources */,
 				BD9DB6182CC5132C00E993DF /* SceneDelegate.swift in Sources */,
+				BD9DB6532CC5CDFC00E993DF /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
